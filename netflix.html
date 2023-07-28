@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="netflix.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 712px;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    background-color: rgb(52, 50, 50);
+    color: white;
+}
+#head1{
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#head1 h1{
+    font-size: 40px;
+    color: red;
+}
+#head1 button{
+    color: red;
+    height: 25px;
+    width: 60px;
+}
+#head1 select{
+    height: 25px;
+    width: 80px;
+}
+#head2{ 
+    display: flex;
+    height: 637px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 140px;
+}
+#head2 h2{
+    font-size: 45px;
+}
+#head2 p{
+    font-size: 18px;
+    margin: 15px;
+}
+#head2 input{
+    width: 270px;
+    height: 35px;
+    background-color: rgb(68, 63, 63);
+    color: white;
+    padding-left: 5px;
+}
+#head2 button{
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+}
+#enjoy{
+    height: 550px;
+    display: flex;
+    background-color: black
+}
+#enjoy #left{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#left h1{
+    font-size: 40px;
+}
+#left p{
+    margin-top: 7px;
+    font-size: 20px;
+}
+#download {
+    height: 550px;
+    display: flex;
+    background-color: black;
+}
+#download #right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+#left img{
+    margin-left: 100px;
+}
+#right h1{
+    font-size: 40px;
+    margin: 3px;
+    font-weight: bolder;
+}
+#right div{
+    margin-left: 50px;
+}
+
+#watch{
+    height: 550px;
+    display: flex;
+    background-color: black
+}
+#watch #left{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#create {
+    height: 550px;
+    display: flex;
+    background-color: rgb(27, 25, 25);
+}
+#create #right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+#create #left img{
+    height: 480px;
+    margin-top: 35px;
+    margin-left: 200px;
+}
+#create #right div{
+    margin-left: 100px;
+}
+footer{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+footer div{
+    display: inline-block;
+}
+footer #foot{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+li a{
+    color: white;
+}
+li{
+    margin: 15px;
+}
+ul{
+    margin-top: 100px;
+}
+#top{
+    position: relative;
+    left: 163px;
+    top: 114px;
+}
+#bottom{
+    position: relative;
+    left: 165px;
+    
+}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="head1">
+			<div><h1>NETFLIX</h1></div>
+			<div>
+				<select name="language" >
+					<option value="English">English</option>
+					<option value="Hindi">हिन्दी</option>
+				</select>
+				<button>Sign In</button>
+			</div>
+		</div>
+		<div id="head2">
+			<div>
+				<h2>Unlimited movies, TV shows and more</h2>
+				<p>Watch anywhere. Cancel anytime.</p>
+				<p>Ready to watch? Enter your email to create or restart your membership.</p>
+				<input type="text" placeholder="Email address">
+				<button id="convert">Get Started ></button>
+			</div>
+		</div>
+	</header><hr>
+	<main>
+		<section id="enjoy">
+			<div id="left">
+				<div>
+					<h1>Enjoy on your TV</h1>
+					<p>Watch on smart TVs, PlayStation, Xbox,</p>
+					<p> Chromecast, Apple TV, Blu-ray players and more.</p>
+				</div>
+			</div>
+			<div id="right">
+				<img alt src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+			</div>
+		</section><hr>
+
+		<section id="download">
+			<div id="left">
+				<img alt src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+			</div>
+			<div id="right">
+				<div>
+					<h1>Download your</h1>
+					<h1>shows to watch</h1>
+					<h1>offline</h1>
+					<p>Save your favourites easily and always have <br>something to watch.</p>
+				</div>
+			</div>	
+		</section><hr>
+
+		<section id="watch">
+			<div id="left">
+				<div>
+					<h1>Watch everywhere</h1>
+					<p>Stream unlimited movies and TV shows on your <br>phone, tablet, laptop, and TV.</p>
+				</div>
+			</div>
+			<div id="right">
+				<img alt src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq">
+			</div>
+		</section><hr>
+
+		<section id="create">
+			<div id="left">
+				<img src="https://res.cloudinary.com/teepublic/image/private/s--o-1fbC8u--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1546897916/production/designs/3910045_0.jpg" alt="cartoon">
+			</div>
+			<div id="right">
+				<div>
+					<h1>Create profiles for</h1>
+					<h1>kids</h1>
+					<p>Send children on adventures with their favourite <br>characters in a space made just for them—free with <br>your membership.</p>
+				</div>
+			</div>	
+		</section><hr>
+	</main>
+	<footer>
+		<div id="top">Questions? Call 000-800-919-1694</div>
+		<div id="foot">
+			<ul>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Media Centre</a></li>
+				<li><a href="#">Ways to Watch</a></li>
+				<li><a href="#">Cookie Preferences</a></li>
+				<li><a href="#">Speed Test</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Help Centre</a></li>
+				<li><a href="#">Investor Relations</a></li>
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Corporate Information</a></li>
+				<li><a href="#">Legal Notices</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Only on Netflix</a></li>
+			</ul>
+		</div>
+		<div id="bottom">Netflix India</div>
+	</footer>
+</body>
+</html>
